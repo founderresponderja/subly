@@ -1,39 +1,45 @@
-# Subly
+# subly
+Gestor de Subscrições e Despesas Recorrentes
 
-Gestor de Subscrições e Despesas Recorrentes.
+## Desenvolvimento
+
+```bash
+npm install
+cp .env.example .env
+docker compose up -d postgres
+npm run db:migrate
+export VITE_GOOGLE_CLIENT_ID="o-mesmo-client-id-do-google"
+npm run dev
+```
+
+## Base de dados
+
+- PostgreSQL local via Docker Compose em `localhost:5432`
+- Configuração em `.env` com `DATABASE_URL`
+- Migrações SQL em `server/migrations`
+- Comando de migração: `npm run db:migrate`
+
+## Autenticação
+
+- Email/password com hash `bcrypt`
+- Sessão em cookie `httpOnly` com JWT
+- Login Google via Google Identity Services + validação de ID token no backend
+- Variáveis necessárias em `.env`: `JWT_SECRET`, `SESSION_COOKIE_NAME`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`
+
+## Stack
+
+- Frontend React + TypeScript com Vite
+- Backend Node.js + Express + TypeScript
+- Persistência real com PostgreSQL + Drizzle ORM
+- Detecção de subscrições recorrentes a partir de CSV
+- Landing page dark-tech com animações em anime.js
 
 ## Estrutura
 
-- `/landing` — landing page separada (HTML/CSS/JS) com animações em anime.js
-- `/frontend` — app React + TypeScript (PWA) para importação CSV, dashboard e alertas
-- `/backend` — API Node.js + Express + TypeScript para importação, deteção automática e métricas
-- `/backend/db/schema.sql` — modelo inicial PostgreSQL (`users`, `bank_connections`, `transactions`, `detected_subscriptions`, `categories`, `alerts`, `household_members`)
-
-## Como correr localmente
-
-### Backend
-
-```bash
-cd /home/runner/work/subly/subly/backend
-npm install
-npm run dev
-```
-
-API disponível em `http://localhost:4000`.
-
-### Frontend
-
-```bash
-cd /home/runner/work/subly/subly/frontend
-npm install
-npm run dev
-```
-
-App disponível em `http://localhost:5173` (proxy `/api` para backend).
-
-### Landing page
-
-Abre `/home/runner/work/subly/subly/landing/index.html` no browser.
+- `src/` - app React + TypeScript
+- `server/` - API Node.js + Express + TypeScript
+- `public/` - manifesto PWA e assets públicos
+- `server/migrations/` - migrações SQL da base de dados
 
 ## RGPD
 
