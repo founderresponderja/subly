@@ -4,13 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
-    "dev:client": "vite",
-    "dev:server": "tsx watch server/index.ts",
-    "db:migrate": "tsx server/migrate.ts",
-    "build": "vite build && tsc -p tsconfig.server.json",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
     "animejs": "^3.2.2",
