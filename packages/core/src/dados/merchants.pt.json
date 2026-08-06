@@ -1,0 +1,602 @@
+[
+  {
+    "id": "nos",
+    "nome": "NOS",
+    "categoria": "telecomunicacoes",
+    "padroes": ["NOS COMUNICACOES", "NOS SGPS", "NOSMADEIRA", "NOS"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "meo",
+    "nome": "MEO",
+    "categoria": "telecomunicacoes",
+    "padroes": ["MEO SERVICOS DE COMUNICACOES", "MEO", "ALTICE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "vodafone",
+    "nome": "Vodafone",
+    "categoria": "telecomunicacoes",
+    "padroes": ["VODAFONE PORTUGAL", "VODAFONE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "nowo",
+    "nome": "NOWO",
+    "categoria": "telecomunicacoes",
+    "padroes": ["NOWO COMMUNICATIONS", "NOWO"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "digi",
+    "nome": "Digi",
+    "categoria": "telecomunicacoes",
+    "padroes": ["DIGI PORTUGAL", "DIGI"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "netflix",
+    "nome": "Netflix",
+    "categoria": "streaming",
+    "padroes": ["NETFLIX.COM", "NETFLIX"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "spotify",
+    "nome": "Spotify",
+    "categoria": "streaming",
+    "padroes": ["SPOTIFY", "SPOTIFY P0A1B2C3"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "hbo-max",
+    "nome": "HBO Max",
+    "categoria": "streaming",
+    "padroes": ["HBO MAX", "HBOMAX", "MAX.COM"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "disney-plus",
+    "nome": "Disney+",
+    "categoria": "streaming",
+    "padroes": ["DISNEY PLUS", "DISNEY+", "DISNEYPLUS"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "prime-video",
+    "nome": "Prime Video",
+    "categoria": "streaming",
+    "padroes": ["AMAZON PRIME VIDEO", "PRIME VIDEO", "AMAZON PRIME"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "dazn",
+    "nome": "DAZN",
+    "categoria": "streaming",
+    "padroes": ["DAZN", "DAZN MEDIA"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "sport-tv",
+    "nome": "Sport TV",
+    "categoria": "streaming",
+    "padroes": ["SPORT TV", "SPORTTV"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "filmin",
+    "nome": "Filmin",
+    "categoria": "streaming",
+    "padroes": ["FILMIN", "FILMIN PT"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "fitness-hut",
+    "nome": "Fitness Hut",
+    "categoria": "ginasio",
+    "padroes": ["FITNESS HUT", "FITNESSHUT"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "holmes-place",
+    "nome": "Holmes Place",
+    "categoria": "ginasio",
+    "padroes": ["HOLMES PLACE", "HOLMESPLACE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "solinca",
+    "nome": "Solinca",
+    "categoria": "ginasio",
+    "padroes": ["SOLINCA", "SOLINCA CLASSIC"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "pump",
+    "nome": "Pump",
+    "categoria": "ginasio",
+    "padroes": ["PUMP FITNESS", "PUMP"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "vivafit",
+    "nome": "VIVAFIT",
+    "categoria": "ginasio",
+    "padroes": ["VIVAFIT", "VIVA FIT"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "fidelidade",
+    "nome": "Fidelidade",
+    "categoria": "seguros",
+    "padroes": ["FIDELIDADE", "FIDELIDADE COMPANHIA DE SEGUROS"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "ageas",
+    "nome": "Ageas",
+    "categoria": "seguros",
+    "padroes": ["AGEAS", "AGEAS PORTUGAL"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "tranquilidade",
+    "nome": "Tranquilidade",
+    "categoria": "seguros",
+    "padroes": ["TRANQUILIDADE", "SEGURADORAS UNIDAS"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "allianz",
+    "nome": "Allianz",
+    "categoria": "seguros",
+    "padroes": ["ALLIANZ", "ALLIANZ PORTUGAL"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "generali",
+    "nome": "Generali",
+    "categoria": "seguros",
+    "padroes": ["GENERALI", "GENERALI TRANQUILIDADE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "zurich",
+    "nome": "Zurich",
+    "categoria": "seguros",
+    "padroes": ["ZURICH", "ZURICH INSURANCE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "edp-comercial",
+    "nome": "EDP Comercial",
+    "categoria": "energia",
+    "padroes": ["EDP COMERCIAL", "EDP COM"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "galp",
+    "nome": "Galp",
+    "categoria": "energia",
+    "padroes": ["GALP ENERGIA", "GALP POWER", "GALP"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "iberdrola",
+    "nome": "Iberdrola",
+    "categoria": "energia",
+    "padroes": ["IBERDROLA CLIENTES", "IBERDROLA"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "endesa",
+    "nome": "Endesa",
+    "categoria": "energia",
+    "padroes": ["ENDESA", "ENDESA ENERGIA"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "repsol",
+    "nome": "Repsol",
+    "categoria": "energia",
+    "padroes": ["REPSOL LUZ E GAS", "REPSOL"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "icloud",
+    "nome": "iCloud",
+    "categoria": "software",
+    "padroes": ["APPLE ICLOUD", "ICLOUD", "APPLE.COM BILL"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "google-one",
+    "nome": "Google One",
+    "categoria": "software",
+    "padroes": ["GOOGLE ONE", "GOOGLE STORAGE", "GOOGLE *ONE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "microsoft-365",
+    "nome": "Microsoft 365",
+    "categoria": "software",
+    "padroes": ["MICROSOFT 365", "MSFT 365", "MICROSOFT"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "adobe",
+    "nome": "Adobe",
+    "categoria": "software",
+    "padroes": ["ADOBE", "ADOBE SYSTEMS"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "chatgpt",
+    "nome": "ChatGPT",
+    "categoria": "software",
+    "padroes": ["CHATGPT", "OPENAI", "OPENAI CHATGPT"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "dropbox",
+    "nome": "Dropbox",
+    "categoria": "software",
+    "padroes": ["DROPBOX", "DROPBOX INC"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "continente-card",
+    "nome": "Continente Card",
+    "categoria": "outro",
+    "padroes": ["CONTINENTE CARD", "CARTAO CONTINENTE", "CONTINENTE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "worten",
+    "nome": "Worten",
+    "categoria": "outro",
+    "padroes": ["WORTEN RESOLVE", "WORTEN", "WORTEN ONLINE"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "amazon",
+    "nome": "Amazon",
+    "categoria": "outro",
+    "padroes": ["AMAZON EU", "AMAZON", "AMZN"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "uber-one",
+    "nome": "Uber One",
+    "categoria": "outro",
+    "padroes": ["UBER ONE", "UBER*ONE", "UBER ONE B.V."],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  },
+  {
+    "id": "bolt",
+    "nome": "Bolt",
+    "categoria": "outro",
+    "padroes": ["BOLT PREMIUM", "BOLT", "BOLT.EU"],
+    "cancelamento": {
+      "canais": [],
+      "preAvisoDias": null,
+      "morada": null,
+      "notas": "",
+      "fonte": "",
+      "verificadoEm": "",
+      "porVerificar": true
+    }
+  }
+]
