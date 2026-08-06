@@ -1,0 +1,110 @@
+{
+  "nome": "telecom-generico",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "tg-001",
+      "data": "2025-01-09",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 000123456",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-002",
+      "data": "2025-02-09",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 000123457",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-003",
+      "data": "2025-03-09",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 000123458",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-004",
+      "data": "2025-04-09",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 000123459",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-005",
+      "data": "2025-01-14",
+      "descritivo": "DD SEPA MEO SERVICOS COMUNICACOES SA REF 000223456",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-006",
+      "data": "2025-02-14",
+      "descritivo": "DD SEPA MEO SERVICOS COMUNICACOES SA REF 000223457",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-007",
+      "data": "2025-03-14",
+      "descritivo": "DD SEPA MEO SERVICOS COMUNICACOES SA REF 000223458",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-008",
+      "data": "2025-04-14",
+      "descritivo": "DD SEPA MEO SERVICOS COMUNICACOES SA REF 000223459",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-009",
+      "data": "2025-01-20",
+      "descritivo": "DD SEPA VODAFONE PORTUGAL COMUNICACOES SA REF 000323456",
+      "valor": -2799,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-010",
+      "data": "2025-02-20",
+      "descritivo": "DD SEPA VODAFONE PORTUGAL COMUNICACOES SA REF 000323457",
+      "valor": -2799,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-011",
+      "data": "2025-03-20",
+      "descritivo": "DD SEPA VODAFONE PORTUGAL COMUNICACOES SA REF 000323458",
+      "valor": -2799,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-012",
+      "data": "2025-04-20",
+      "descritivo": "DD SEPA VODAFONE PORTUGAL COMUNICACOES SA REF 000323459",
+      "valor": -2799,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "tg-013",
+      "data": "2025-03-28",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -5210,
+      "moeda": "EUR",
+      "origem": "csv"
+    }
+  ]
+}

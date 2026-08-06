@@ -1,0 +1,20 @@
+{
+  "sintetico": true,
+  "subscricoesEsperadas": [
+    {
+      "comercianteId": "nos",
+      "periodicidade": "mensal",
+      "valorTipico": 3199
+    },
+    {
+      "comercianteId": "meo",
+      "periodicidade": "mensal",
+      "valorTipico": 2999
+    },
+    {
+      "comercianteId": "vodafone",
+      "periodicidade": "mensal",
+      "valorTipico": 2799
+    }
+  ]
+}

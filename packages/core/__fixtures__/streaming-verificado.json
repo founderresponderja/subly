@@ -1,0 +1,110 @@
+{
+  "nome": "streaming-verificado",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "sv-001",
+      "data": "2025-01-06",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "sv-002",
+      "data": "2025-02-06",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "sv-003",
+      "data": "2025-03-06",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "sv-004",
+      "data": "2025-04-06",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "sv-005",
+      "data": "2025-01-12",
+      "descritivo": "PAGAMENTO SPOTIFY P0A1B2C3 STOCKHOLM",
+      "valor": -1099,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "sv-006",
+      "data": "2025-02-12",
+      "descritivo": "PAGAMENTO SPOTIFY P0A1B2C3 STOCKHOLM",
+      "valor": -1099,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "sv-007",
+      "data": "2025-03-12",
+      "descritivo": "PAGAMENTO SPOTIFY P0A1B2C3 STOCKHOLM",
+      "valor": -1099,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "sv-008",
+      "data": "2025-04-12",
+      "descritivo": "PAGAMENTO SPOTIFY P0A1B2C3 STOCKHOLM",
+      "valor": -1099,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "sv-009",
+      "data": "2025-01-18",
+      "descritivo": "COMPRA HBOMAX.COM REF 889901",
+      "valor": -599,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "sv-010",
+      "data": "2025-02-18",
+      "descritivo": "COMPRA HBOMAX.COM REF 889902",
+      "valor": -599,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "sv-011",
+      "data": "2025-03-18",
+      "descritivo": "COMPRA HBOMAX.COM REF 889903",
+      "valor": -599,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "sv-012",
+      "data": "2025-04-18",
+      "descritivo": "COMPRA HBOMAX.COM REF 889904",
+      "valor": -599,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "sv-013",
+      "data": "2025-02-25",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -2780,
+      "moeda": "EUR",
+      "origem": "csv"
+    }
+  ]
+}
