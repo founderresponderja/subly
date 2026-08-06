@@ -10,7 +10,7 @@ describe('merchants.pt.json', () => {
     for (const merchant of merchantsPt) {
       const { preAvisoDias, fonte } = merchant.cancelamento
       if (preAvisoDias !== null) {
-        expect(fonte.trim().length).toBeGreaterThan(0)
+        expect((fonte ?? '').trim().length).toBeGreaterThan(0)
       }
     }
   })

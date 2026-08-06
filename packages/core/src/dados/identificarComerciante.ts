@@ -6,7 +6,7 @@ export type CancelamentoComerciante = {
   preAvisoDias: number | null
   morada: string | null
   notas: string
-  fonte: string
+  fonte: string | null
   verificadoEm: string
   porVerificar: boolean
 }
@@ -59,7 +59,7 @@ function isCancelamento(value: unknown): value is CancelamentoComerciante {
     (typeof item.preAvisoDias === 'number' || item.preAvisoDias === null) &&
     (typeof item.morada === 'string' || item.morada === null) &&
     typeof item.notas === 'string' &&
-    typeof item.fonte === 'string' &&
+    (typeof item.fonte === 'string' || item.fonte === null) &&
     typeof item.verificadoEm === 'string' &&
     typeof item.porVerificar === 'boolean'
   )
