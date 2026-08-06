@@ -16,8 +16,15 @@ type Esperado = {
     comercianteId: string
     periodicidade: 'mensal' | 'trimestral' | 'semestral' | 'anual'
     valorTipico: number
+    variacaoPreco?: {
+      anterior: number
+      atual: number
+      desde: string
+    } | null
   }>
 }
+
+const VALOR_TIPICO_MATCH_TOLERANCE = 0.05
 
 export type EvalFixtureResult = {
   fixture: string
@@ -54,32 +61,87 @@ function ratio(numerator: number, denominator: number): number {
   return numerator / denominator
 }
 
-function createKey(item: { comercianteId: string; periodicidade: string; valorTipico: number }): string {
-  return `${item.comercianteId}|${item.periodicidade}|${item.valorTipico}`
+function hasValorTipicoMatchWithinTolerance(expected: number, detected: number): boolean {
+  if (expected === 0) {
+    return detected === 0
+  }
+  return Math.abs(detected - expected) / Math.abs(expected) <= VALOR_TIPICO_MATCH_TOLERANCE
+}
+
+function hasVariacaoPrecoMatch(
+  expected:
+    | {
+        anterior: number
+        atual: number
+        desde: string
+      }
+    | null
+    | undefined,
+  detected: { anterior: number; atual: number; desde: string } | null
+): boolean {
+  if (expected === undefined) {
+    return true
+  }
+  if (expected === null) {
+    return detected === null
+  }
+  if (detected === null) {
+    return false
+  }
+
+  return (
+    expected.anterior === detected.anterior &&
+    expected.atual === detected.atual &&
+    expected.desde === detected.desde
+  )
+}
+
+function hasSubscriptionMatch(
+  expected: Esperado['subscricoesEsperadas'][number],
+  detected: ReturnType<typeof detetarSubscricoes>[number]
+): boolean {
+  return (
+    expected.comercianteId === detected.comerciante.id &&
+    expected.periodicidade === detected.periodicidade &&
+    hasValorTipicoMatchWithinTolerance(expected.valorTipico, detected.valorTipico) &&
+    hasVariacaoPrecoMatch(expected.variacaoPreco, detected.variacaoPreco)
+  )
+}
+
+function createExpectedDebugKey(item: Esperado['subscricoesEsperadas'][number]): string {
+  const variacao = item.variacaoPreco
+    ? `|variacao:${item.variacaoPreco.anterior}->${item.variacaoPreco.atual}@${item.variacaoPreco.desde}`
+    : ''
+  return `${item.comercianteId}|${item.periodicidade}|${item.valorTipico}${variacao}`
+}
+
+function createDetectedDebugKey(item: ReturnType<typeof detetarSubscricoes>[number]): string {
+  const variacao = item.variacaoPreco
+    ? `|variacao:${item.variacaoPreco.anterior}->${item.variacaoPreco.atual}@${item.variacaoPreco.desde}`
+    : ''
+  return `${item.comerciante.id}|${item.periodicidade}|${item.valorTipico}${variacao}`
 }
 
 function evaluateFixture(fixture: FixtureTransacoes, expected: Esperado): EvalFixtureResult {
-  const expectedKeys = new Set(expected.subscricoesEsperadas.map(createKey))
   const detected = detetarSubscricoes(fixture.transacoes, fixture.dataReferencia)
-  const detectedKeys = new Set(
-    detected.map((subscricao) =>
-      createKey({
-        comercianteId: subscricao.comerciante.id,
-        periodicidade: subscricao.periodicidade,
-        valorTipico: subscricao.valorTipico,
-      })
-    )
-  )
+  const unmatchedDetected = [...detected]
 
   let verdadeirosPositivos = 0
-  for (const key of expectedKeys) {
-    if (detectedKeys.has(key)) {
+  let falsosNegativos = 0
+
+  for (const expectedItem of expected.subscricoesEsperadas) {
+    const matchedIndex = unmatchedDetected.findIndex((detectedItem) =>
+      hasSubscriptionMatch(expectedItem, detectedItem)
+    )
+    if (matchedIndex >= 0) {
       verdadeirosPositivos += 1
+      unmatchedDetected.splice(matchedIndex, 1)
+    } else {
+      falsosNegativos += 1
     }
   }
 
-  const falsosPositivos = Math.max(0, detectedKeys.size - verdadeirosPositivos)
-  const falsosNegativos = Math.max(0, expectedKeys.size - verdadeirosPositivos)
+  const falsosPositivos = unmatchedDetected.length
   const precisao = ratio(verdadeirosPositivos, verdadeirosPositivos + falsosPositivos)
   const cobertura = ratio(verdadeirosPositivos, verdadeirosPositivos + falsosNegativos)
 
@@ -91,8 +153,8 @@ function evaluateFixture(fixture: FixtureTransacoes, expected: Esperado): EvalFi
     falsosNegativos,
     precisao: round(precisao),
     cobertura: round(cobertura),
-    detetadas: [...detectedKeys].sort(),
-    esperadas: [...expectedKeys].sort(),
+    detetadas: detected.map(createDetectedDebugKey).sort(),
+    esperadas: expected.subscricoesEsperadas.map(createExpectedDebugKey).sort(),
   }
 }
 

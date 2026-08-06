@@ -1,0 +1,38 @@
+{
+  "nome": "confianca-limiar",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "cl-001",
+      "data": "2025-01-08",
+      "descritivo": "DD SEPA CLUBE LIMIAR FLEX PLAN REF 771001",
+      "valor": -1000,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "cl-002",
+      "data": "2025-02-08",
+      "descritivo": "DD SEPA CLUBE LIMIAR FLEX PLAN REF 771002",
+      "valor": -1000,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "cl-003",
+      "data": "2025-03-08",
+      "descritivo": "DD SEPA CLUBE LIMIAR FLEX PLAN REF 771003",
+      "valor": -1250,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "cl-004",
+      "data": "2025-02-17",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -4320,
+      "moeda": "EUR",
+      "origem": "csv"
+    }
+  ]
+}

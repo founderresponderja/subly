@@ -1,0 +1,46 @@
+{
+  "nome": "variacao-preco-sensivel",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "vps-001",
+      "data": "2025-01-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1200,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "vps-002",
+      "data": "2025-02-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1200,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "vps-003",
+      "data": "2025-03-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1500,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "vps-004",
+      "data": "2025-04-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1500,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "vps-005",
+      "data": "2025-04-21",
+      "descritivo": "LEV MB 24H CENTRO COMERCIAL",
+      "valor": -2000,
+      "moeda": "EUR",
+      "origem": "colado"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "sintetico": true,
+  "subscricoesEsperadas": [
+    {
+      "comercianteId": "netflix",
+      "periodicidade": "mensal",
+      "valorTipico": 1350,
+      "variacaoPreco": {
+        "anterior": 1200,
+        "atual": 1500,
+        "desde": "2025-03-05"
+      }
+    }
+  ]
+}
