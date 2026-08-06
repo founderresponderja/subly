@@ -107,6 +107,14 @@ na dúvida, deixar o campo vazio e marcar `porVerificar: true`.
 Nunca inventar números de telefone, moradas, prazos de pré-aviso ou valores de
 penalização. Se não houver fonte, o campo fica por preencher.
 
+## Curadoria do dicionário
+
+`merchants.pt.json` só é alterado em PRs dedicados a essa tarefa, nunca como
+parte de um PR sobre o motor de deteção, normalização, UI, ou qualquer outra
+coisa. Se uma tarefa parecer exigir uma nova entrada no dicionário, parar e
+perguntar em vez de a adicionar — os dados de cancelamento vêm de um processo
+de verificação humana à parte.
+
 ## Âmbito — fora do MVP
 
 Não implementar, nem sequer preparar terreno, sem instrução explícita:
