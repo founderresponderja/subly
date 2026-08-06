@@ -1,0 +1,20 @@
+{
+  "sintetico": true,
+  "subscricoesEsperadas": [
+    {
+      "comercianteId": "netflix",
+      "periodicidade": "mensal",
+      "valorTipico": 1299
+    },
+    {
+      "comercianteId": "nos",
+      "periodicidade": "mensal",
+      "valorTipico": 3199
+    },
+    {
+      "comercianteId": "prime-video",
+      "periodicidade": "anual",
+      "valorTipico": 4990
+    }
+  ]
+}

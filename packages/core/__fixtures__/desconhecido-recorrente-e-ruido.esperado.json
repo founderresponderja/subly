@@ -1,0 +1,10 @@
+{
+  "sintetico": true,
+  "subscricoesEsperadas": [
+    {
+      "comercianteId": "desconhecido-clube-xyz-premium",
+      "periodicidade": "mensal",
+      "valorTipico": 1590
+    }
+  ]
+}

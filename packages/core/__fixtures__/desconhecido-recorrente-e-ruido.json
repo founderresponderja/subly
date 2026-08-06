@@ -1,0 +1,78 @@
+{
+  "nome": "desconhecido-recorrente-e-ruido",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "dr-001",
+      "data": "2025-01-03",
+      "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551100",
+      "valor": -1590,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "dr-002",
+      "data": "2025-02-03",
+      "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551101",
+      "valor": -1590,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "dr-003",
+      "data": "2025-03-03",
+      "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551102",
+      "valor": -1590,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "dr-004",
+      "data": "2025-04-03",
+      "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551103",
+      "valor": -1590,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "dr-005",
+      "data": "2025-01-10",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -2200,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "dr-006",
+      "data": "2025-01-17",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -7900,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "dr-007",
+      "data": "2025-02-21",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -1900,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "dr-008",
+      "data": "2025-03-14",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -4700,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "dr-009",
+      "data": "2025-04-10",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": 1200,
+      "moeda": "EUR",
+      "origem": "colado"
+    }
+  ]
+}

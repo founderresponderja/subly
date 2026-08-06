@@ -1,0 +1,10 @@
+{
+  "sintetico": true,
+  "subscricoesEsperadas": [
+    {
+      "comercianteId": "meo",
+      "periodicidade": "mensal",
+      "valorTipico": 3299
+    }
+  ]
+}

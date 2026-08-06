@@ -1,0 +1,70 @@
+{
+  "nome": "mensal-com-falha-e-aumento",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "mf-001",
+      "data": "2025-01-15",
+      "descritivo": "DD SEPA MEO - SERVICOS DE COMUNICACOES LISBOA",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "mf-002",
+      "data": "2025-02-15",
+      "descritivo": "DD SEPA MEO - SERVICOS DE COMUNICACOES LISBOA",
+      "valor": -2999,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "mf-003",
+      "data": "2025-04-15",
+      "descritivo": "DD SEPA MEO - SERVICOS DE COMUNICACOES LISBOA",
+      "valor": -3299,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "mf-004",
+      "data": "2025-05-15",
+      "descritivo": "DD SEPA MEO - SERVICOS DE COMUNICACOES LISBOA",
+      "valor": -3299,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "mf-005",
+      "data": "2025-06-15",
+      "descritivo": "DD SEPA MEO - SERVICOS DE COMUNICACOES LISBOA",
+      "valor": -3299,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "mf-006",
+      "data": "2025-01-07",
+      "descritivo": "COMPRA GALP TERMINAL 8899 PORTO",
+      "valor": -4500,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "mf-007",
+      "data": "2025-01-29",
+      "descritivo": "COMPRA GALP TERMINAL 8899 PORTO",
+      "valor": -3700,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "mf-008",
+      "data": "2025-03-03",
+      "descritivo": "COMPRA GALP TERMINAL 8899 PORTO",
+      "valor": -5900,
+      "moeda": "EUR",
+      "origem": "csv"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "nome": "streaming-telecom-anual",
+  "sintetico": true,
+  "transacoes": [
+    {
+      "id": "st-001",
+      "data": "2025-01-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-002",
+      "data": "2025-02-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-003",
+      "data": "2025-03-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-004",
+      "data": "2025-04-05",
+      "descritivo": "COMPRA NETFLIX.COM AMSTERDAM",
+      "valor": -1299,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-005",
+      "data": "2025-01-11",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 220001",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "st-006",
+      "data": "2025-02-11",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 220002",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "st-007",
+      "data": "2025-03-11",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 220003",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "st-008",
+      "data": "2025-04-11",
+      "descritivo": "DD SEPA NOS COMUNICACOES SA REF 220004",
+      "valor": -3199,
+      "moeda": "EUR",
+      "origem": "pdf"
+    },
+    {
+      "id": "st-009",
+      "data": "2022-05-01",
+      "descritivo": "COMPRA AMAZON PRIME VIDEO MADRID",
+      "valor": -4990,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-010",
+      "data": "2023-05-01",
+      "descritivo": "COMPRA AMAZON PRIME VIDEO MADRID",
+      "valor": -4990,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-011",
+      "data": "2024-05-01",
+      "descritivo": "COMPRA AMAZON PRIME VIDEO MADRID",
+      "valor": -4990,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "st-012",
+      "data": "2025-01-08",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -4210,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "st-013",
+      "data": "2025-02-02",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -1860,
+      "moeda": "EUR",
+      "origem": "colado"
+    },
+    {
+      "id": "st-014",
+      "data": "2025-02-24",
+      "descritivo": "COMPRA CONTINENTE",
+      "valor": -5730,
+      "moeda": "EUR",
+      "origem": "colado"
+    }
+  ]
+}
