@@ -61,6 +61,17 @@ function runRules(value: string, rules: Regra[]): string {
   }, value)
 }
 
+function removeLeadingCardNumber(value: string): string {
+  const tokens = collapseSpaces(value).split(' ').filter(Boolean)
+  if (tokens.length <= 1) {
+    return value
+  }
+  if (!/^\d{4,}$/.test(tokens[0] ?? '')) {
+    return value
+  }
+  return tokens.slice(1).join(' ')
+}
+
 function buildPistas(limpo: string): string[] {
   if (!limpo) {
     return []
@@ -153,7 +164,7 @@ const regrasRuidoAgressivo: Regra[] = [
   {
     // Números de cartão/terminal no início de compras.
     nome: 'leading-card-number',
-    aplicar: (entrada) => entrada.replace(/^\d{4,}\b/, ' '),
+    aplicar: removeLeadingCardNumber,
   },
   {
     // Identificadores numéricos longos (referências e IDs transacionais).
@@ -170,10 +181,11 @@ export function normalizarDescritivo(bruto: string): ResultadoNormalizacao {
 
   const semPrefixos = runRules(originalCompact, regrasPrefixo)
   const semRuidoBasico = runRules(semPrefixos, regrasRuidoBasico)
-  const semRuidoAgressivo = runRules(semRuidoBasico, regrasRuidoAgressivo)
-  const limpoPrimario = toComparable(stripTrailingLocations(semRuidoAgressivo))
+  const semLocalizacao = stripTrailingLocations(semRuidoBasico)
+  const semRuidoAgressivo = runRules(semLocalizacao, regrasRuidoAgressivo)
+  const limpoPrimario = toComparable(semRuidoAgressivo)
 
-  const limpoFallback = toComparable(stripTrailingLocations(semRuidoBasico))
+  const limpoFallback = toComparable(semLocalizacao)
   const limpo = limpoPrimario || limpoFallback || toComparable(originalCompact)
 
   return {
