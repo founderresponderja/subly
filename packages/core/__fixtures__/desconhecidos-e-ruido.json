@@ -1,9 +1,9 @@
 {
-  "nome": "desconhecido-recorrente-e-ruido",
+  "nome": "desconhecidos-e-ruido",
   "sintetico": true,
   "transacoes": [
     {
-      "id": "dr-001",
+      "id": "der-001",
       "data": "2025-01-03",
       "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551100",
       "valor": -1590,
@@ -11,7 +11,7 @@
       "origem": "pdf"
     },
     {
-      "id": "dr-002",
+      "id": "der-002",
       "data": "2025-02-03",
       "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551101",
       "valor": -1590,
@@ -19,7 +19,7 @@
       "origem": "pdf"
     },
     {
-      "id": "dr-003",
+      "id": "der-003",
       "data": "2025-03-03",
       "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551102",
       "valor": -1590,
@@ -27,7 +27,7 @@
       "origem": "pdf"
     },
     {
-      "id": "dr-004",
+      "id": "der-004",
       "data": "2025-04-03",
       "descritivo": "DD SEPA CLUBE XYZ PREMIUM REF 551103",
       "valor": -1590,
@@ -35,7 +35,7 @@
       "origem": "pdf"
     },
     {
-      "id": "dr-005",
+      "id": "der-005",
       "data": "2025-01-10",
       "descritivo": "COMPRA CONTINENTE",
       "valor": -2200,
@@ -43,7 +43,7 @@
       "origem": "colado"
     },
     {
-      "id": "dr-006",
+      "id": "der-006",
       "data": "2025-01-17",
       "descritivo": "COMPRA CONTINENTE",
       "valor": -7900,
@@ -51,7 +51,7 @@
       "origem": "colado"
     },
     {
-      "id": "dr-007",
+      "id": "der-007",
       "data": "2025-02-21",
       "descritivo": "COMPRA CONTINENTE",
       "valor": -1900,
@@ -59,7 +59,7 @@
       "origem": "colado"
     },
     {
-      "id": "dr-008",
+      "id": "der-008",
       "data": "2025-03-14",
       "descritivo": "COMPRA CONTINENTE",
       "valor": -4700,
@@ -67,7 +67,23 @@
       "origem": "colado"
     },
     {
-      "id": "dr-009",
+      "id": "der-009",
+      "data": "2025-01-28",
+      "descritivo": "LEV MB 24H CENTRO COMERCIAL LISBOA",
+      "valor": -2000,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "der-010",
+      "data": "2025-03-19",
+      "descritivo": "LEV MB 24H CENTRO COMERCIAL LISBOA",
+      "valor": -8000,
+      "moeda": "EUR",
+      "origem": "csv"
+    },
+    {
+      "id": "der-011",
       "data": "2025-04-10",
       "descritivo": "COMPRA CONTINENTE",
       "valor": 1200,
