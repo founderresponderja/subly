@@ -82,12 +82,13 @@ function isComercianteCatalogo(value: unknown): value is ComercianteCatalogo {
 }
 
 function loadMerchants(): ComercianteCatalogo[] {
-  if (!Array.isArray(merchantsRaw)) {
+  const rawEntries: unknown = merchantsRaw
+  if (!Array.isArray(rawEntries)) {
     throw new Error('Formato inválido: merchants.pt.json deve ser um array.')
   }
 
-  const parsed = merchantsRaw.filter(isComercianteCatalogo)
-  if (parsed.length !== merchantsRaw.length) {
+  const parsed = rawEntries.filter(isComercianteCatalogo)
+  if (parsed.length !== rawEntries.length) {
     throw new Error('Formato inválido: existem entradas de comerciante mal tipadas.')
   }
 
