@@ -126,6 +126,15 @@ service worker · analytics de terceiros nas páginas que tocam em dados finance
 Não criar tabelas, tipos ou pastas para funcionalidades futuras. Não adicionar
 dependências fora das listadas sem justificar na descrição do PR.
 
+## Transparência de decisões
+
+Quando uma tarefa exigir uma escolha que não foi especificada
+explicitamente no prompt — renomear um campo, remapear um `id`,
+reordenar dados, alterar um tipo para o código compilar — essa escolha
+tem de ser reportada explicitamente na descrição do PR, mesmo que
+pareça óbvia ou de baixo risco. Nunca reportar apenas "Concluído" sem
+listar decisões não pedidas que foram tomadas pelo caminho.
+
 ## Estilo de trabalho
 
 - Um PR por tarefa. Se a tarefa parecer dar mais de ~400 linhas de diff, dividir e
