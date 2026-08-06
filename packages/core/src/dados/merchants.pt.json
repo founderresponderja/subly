@@ -50,27 +50,27 @@
     "categoria": "telecomunicacoes",
     "padroes": ["NOWO COMMUNICATIONS", "NOWO"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "digi",
-    "nome": "Digi",
+    "nome": "Digi Portugal",
     "categoria": "telecomunicacoes",
     "padroes": ["DIGI PORTUGAL", "DIGI"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -80,12 +80,12 @@
     "categoria": "streaming",
     "padroes": ["NETFLIX.COM", "NETFLIX"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["Online (netflix.com/cancelplan)"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
-      "fonte": "",
-      "verificadoEm": "",
+      "morada": "não encontrado",
+      "notas": "Cancela no fim do ciclo de faturação em curso. Sem fidelização.",
+      "fonte": "https://help.netflix.com/pt-pt/node/124418",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -95,12 +95,12 @@
     "categoria": "streaming",
     "padroes": ["SPOTIFY", "SPOTIFY P0A1B2C3"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["Contactando o apoio", "Online (definições de conta)"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
-      "fonte": "",
-      "verificadoEm": "",
+      "morada": "não encontrado",
+      "notas": "Subscrições continuam indefinidamente até ordem de cancelamento. Sem fidelização fixa extraída.",
+      "fonte": "https://www.spotify.com/pt-pt/legal/end-user-agreement/",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -110,12 +110,12 @@
     "categoria": "streaming",
     "padroes": ["HBO MAX", "HBOMAX", "MAX.COM"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["Online (desativar renovação)", "Apoio ao cliente"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
-      "fonte": "",
-      "verificadoEm": "",
+      "morada": "não encontrado",
+      "notas": "Planos incluem compromisso mínimo de um mês ou de um ano, dependendo da subscrição base.",
+      "fonte": "https://help.hbomax.com/pt-pt/answer/detail/000002522",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -125,27 +125,27 @@
     "categoria": "streaming",
     "padroes": ["DISNEY PLUS", "DISNEY+", "DISNEYPLUS"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "prime-video",
-    "nome": "Prime Video",
+    "nome": "Amazon Prime",
     "categoria": "streaming",
     "padroes": ["AMAZON PRIME VIDEO", "PRIME VIDEO", "AMAZON PRIME"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["Online (Conta e configurações)"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Fonte consultada é do Brasil (pt_br), não de Portugal — não usar para prazos legais locais. O valor de 24h citado aplica-se apenas a subscrições faturadas via Apple, não é um prazo geral.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -155,12 +155,12 @@
     "categoria": "streaming",
     "padroes": ["DAZN", "DAZN MEDIA"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["Online ('A Minha Conta')", "E-mail (help@dazn.com)"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
-      "fonte": "",
-      "verificadoEm": "",
+      "morada": "DAZN Limited, 12 Hammersmith Grove, Londres, Inglaterra, W6 7AP",
+      "notas": "Os 14 dias citados são o direito europeu de livre resolução após adesão (arrependimento), não um prazo de pré-aviso para cancelar subscrição em curso. Confirmar se existe prazo de pré-aviso separado.",
+      "fonte": "https://www.dazn.com/pt-PT/help/articles/16391473315101-termos-e-condicoes-de-utilizacao",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -170,12 +170,12 @@
     "categoria": "streaming",
     "padroes": ["SPORT TV", "SPORTTV"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -230,12 +230,12 @@
     "categoria": "ginasio",
     "padroes": ["SOLINCA", "SOLINCA CLASSIC"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -245,12 +245,12 @@
     "categoria": "ginasio",
     "padroes": ["PUMP FITNESS", "PUMP"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -260,12 +260,12 @@
     "categoria": "ginasio",
     "padroes": ["VIVAFIT", "VIVA FIT"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -305,42 +305,42 @@
     "categoria": "seguros",
     "padroes": ["TRANQUILIDADE", "SEGURADORAS UNIDAS"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Única fonte encontrada refere-se a seguro de embarcações de recreio, não generalizável a outros ramos (auto, saúde, casa).",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "allianz",
-    "nome": "Allianz",
+    "nome": "Allianz Portugal",
     "categoria": "seguros",
     "padroes": ["ALLIANZ", "ALLIANZ PORTUGAL"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "generali",
-    "nome": "Generali",
+    "nome": "Generali Portugal",
     "categoria": "seguros",
     "padroes": ["GENERALI", "GENERALI TRANQUILIDADE"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Fonte reutilizada da Tranquilidade referia-se a seguro de embarcações; sem confirmação de que se aplica a outros ramos de seguro Generali.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -376,46 +376,46 @@
   },
   {
     "id": "galp",
-    "nome": "Galp",
+    "nome": "Galp Energia",
     "categoria": "energia",
     "padroes": ["GALP ENERGIA", "GALP POWER", "GALP"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "iberdrola",
-    "nome": "Iberdrola",
+    "nome": "Iberdrola Portugal",
     "categoria": "energia",
     "padroes": ["IBERDROLA CLIENTES", "IBERDROLA"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "endesa",
-    "nome": "Endesa",
+    "nome": "Endesa Portugal",
     "categoria": "energia",
     "padroes": ["ENDESA", "ENDESA ENERGIA"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Fonte é FAQ de contratação empresarial (negocios/), não de particulares — prazo pode não se aplicar a contratos residenciais.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -440,12 +440,12 @@
     "categoria": "software",
     "padroes": ["APPLE ICLOUD", "ICLOUD", "APPLE.COM BILL"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -455,12 +455,12 @@
     "categoria": "software",
     "padroes": ["GOOGLE ONE", "GOOGLE STORAGE", "GOOGLE *ONE"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
@@ -470,27 +470,27 @@
     "categoria": "software",
     "padroes": ["MICROSOFT 365", "MSFT 365", "MICROSOFT"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
   {
     "id": "adobe",
-    "nome": "Adobe",
+    "nome": "Adobe Creative Cloud",
     "categoria": "software",
     "padroes": ["ADOBE", "ADOBE SYSTEMS"],
     "cancelamento": {
-      "canais": [],
+      "canais": ["não encontrado"],
       "preAvisoDias": null,
-      "morada": null,
-      "notas": "",
+      "morada": "não encontrado",
+      "notas": "Pesquisa oficial não retornou citações literais exatas.",
       "fonte": "",
-      "verificadoEm": "",
+      "verificadoEm": "2026-08-06",
       "porVerificar": true
     }
   },
