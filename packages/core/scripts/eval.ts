@@ -1,24 +1,41 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { detetarSubscricoes } from '../dist/index.js'
+import { detetarSubscricoes } from '../src/detetar/detetarSubscricoes'
+import type { Transacao } from '../src/tipos'
 
-function round(value) {
+type FixtureTransacoes = {
+  nome: string
+  sintetico: boolean
+  dataReferencia?: string
+  transacoes: Transacao[]
+}
+
+type Esperado = {
+  sintetico: boolean
+  subscricoesEsperadas: Array<{
+    comercianteId: string
+    periodicidade: 'mensal' | 'trimestral' | 'semestral' | 'anual'
+    valorTipico: number
+  }>
+}
+
+function round(value: number): number {
   return Number(value.toFixed(4))
 }
 
-function ratio(numerator, denominator) {
+function ratio(numerator: number, denominator: number): number {
   if (denominator === 0) {
     return 1
   }
   return numerator / denominator
 }
 
-function createKey(item) {
+function createKey(item: { comercianteId: string; periodicidade: string; valorTipico: number }): string {
   return `${item.comercianteId}|${item.periodicidade}|${item.valorTipico}`
 }
 
-function evaluateFixture(fixture, expected) {
+function evaluateFixture(fixture: FixtureTransacoes, expected: Esperado) {
   const expectedKeys = new Set(expected.subscricoesEsperadas.map(createKey))
   const detected = detetarSubscricoes(fixture.transacoes, fixture.dataReferencia)
   const detectedKeys = new Set(
@@ -56,8 +73,26 @@ function evaluateFixture(fixture, expected) {
   }
 }
 
-function renderText(report) {
-  const lines = []
+function renderText(report: {
+  fixturesSinteticas: number
+  fixtures: Array<{
+    fixture: string
+    sintetico: boolean
+    verdadeirosPositivos: number
+    falsosPositivos: number
+    falsosNegativos: number
+    precisao: number
+    cobertura: number
+  }>
+  total: {
+    verdadeirosPositivos: number
+    falsosPositivos: number
+    falsosNegativos: number
+    precisao: number
+    cobertura: number
+  }
+}) {
+  const lines: string[] = []
 
   lines.push(`Fixtures avaliadas: ${report.fixtures.length}`)
   lines.push(`Fixtures sintéticas: ${report.fixturesSinteticas}`)
@@ -100,8 +135,11 @@ function buildReport() {
     const fixturePath = path.join(fixturesDir, fileName)
     const expectedPath = path.join(fixturesDir, fileName.replace(/\.json$/u, '.esperado.json'))
 
-    const fixture = JSON.parse(readFileSync(fixturePath, 'utf8'))
-    const expected = JSON.parse(readFileSync(expectedPath, 'utf8'))
+    const fixture = JSON.parse(readFileSync(fixturePath, 'utf8')) as FixtureTransacoes
+    const expected = JSON.parse(readFileSync(expectedPath, 'utf8')) as Esperado
+    if (!fixture.sintetico || !expected.sintetico) {
+      throw new Error(`Fixture ${fileName} não está marcada com sintetico: true em ambos os ficheiros.`)
+    }
 
     return evaluateFixture(fixture, expected)
   })
@@ -116,7 +154,7 @@ function buildReport() {
     { verdadeirosPositivos: 0, falsosPositivos: 0, falsosNegativos: 0 }
   )
 
-  const report = {
+  return {
     fixturesSinteticas: fixtureResults.filter((fixture) => fixture.sintetico).length,
     fixtures: fixtureResults,
     total: {
@@ -125,13 +163,10 @@ function buildReport() {
       cobertura: round(ratio(total.verdadeirosPositivos, total.verdadeirosPositivos + total.falsosNegativos)),
     },
   }
-
-  return report
 }
 
 const report = buildReport()
-const asJson = process.argv.includes('--json')
-if (asJson) {
+if (process.argv.includes('--json')) {
   console.log(JSON.stringify(report, null, 2))
 } else {
   console.log(renderText(report))

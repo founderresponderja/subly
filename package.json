@@ -7,11 +7,12 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "eval": "npm run eval --workspace @subly/core",
+    "eval": "npm --workspace @subly/core run eval --",
     "test": "npm run test --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "devDependencies": {
+    "tsx": "^4.20.3",
     "typescript": "^5.9.2",
     "vitest": "^4.1.10"
   }
