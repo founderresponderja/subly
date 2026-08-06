@@ -1,0 +1,1 @@
+export { detetarSubscricoes } from './detetarSubscricoes'
