@@ -30,6 +30,39 @@ que recebe apenas um email.
 Esta regra existe porque é simultaneamente a promessa de marketing, a estratégia
 de conformidade RGPD e a razão pela qual não temos multi-tenancy para estragar.
 
+## Segurança e RGPD
+
+Este projeto processa dados bancários — a categoria mais sensível de
+dados pessoais depois de saúde. Isto aplica-se a todas as tarefas, não
+só às que mencionam explicitamente segurança:
+
+- Nenhuma dependência nova entra sem `npm audit` limpo (ou vulnerabilidade
+  justificada por escrito na descrição do PR, se não houver correção
+  disponível). Corre `npm audit` como parte da validação de qualquer PR
+  que altere `package.json` ou `package-lock.json`.
+- Nenhum dado de transação (descritivo, valor, data, saldo) é escrito em
+  `console.log`, telemetria, ou qualquer mecanismo de logging, mesmo em
+  desenvolvimento. Erros reportam o tipo de falha, nunca o conteúdo.
+- Nenhuma dependência de terceiros com telemetria própria (analytics,
+  crash reporting que envie payloads) entra no caminho que toca em
+  `Transacao`. Verificar isto antes de adicionar qualquer pacote a
+  `apps/web`.
+- Ficheiros de fixture ou exemplo nunca contêm dados reais de pessoas
+  identificáveis — nem em testes, nem em commits de exemplo, nem em
+  capturas de ecrã anexadas a PRs.
+- Ao construir os importadores de PDF/CSV (`apps/web`), qualquer
+  biblioteca de parsing de terceiros é avaliada quanto à superfície de
+  execução de código (ex. `pdfjs-dist` correr JavaScript embebido em
+  PDFs maliciosos) antes de ser adicionada — reportar essa avaliação na
+  descrição do PR.
+- Cada PR que toque em `packages/core/src/dados`, `apps/web`, ou
+  qualquer caminho que manuseie `Transacao`, inclui uma linha explícita
+  na descrição: "Dados que este PR expõe ou processa: [...]" — mesmo
+  que a resposta seja "nenhum".
+
+Isto não substitui a regra de arquitetura número um (nenhum dado sai do
+dispositivo) — reforça-a com práticas concretas de higiene de código.
+
 ## Stack
 
 - TypeScript em todo o lado, `strict: true`. Sem `any` sem comentário a justificar.
