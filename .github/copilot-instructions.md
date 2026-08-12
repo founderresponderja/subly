@@ -172,6 +172,12 @@ listar decisões não pedidas que foram tomadas pelo caminho.
 
 - Um PR por tarefa. Se a tarefa parecer dar mais de ~400 linhas de diff, dividir e
 perguntar primeiro.
+- Cada tarefa produz um único commit no branch de feature. Se for necessário um
+  ajuste depois de correr build/typecheck/testes, usa `git commit --amend` ou
+  `git rebase -i` para incorporar a correção no commit original, em vez de criar
+  um segundo commit separado só para o ajuste. O histórico de um branch de
+  feature deve refletir unidades de trabalho completas, não a sequência de
+  tentativas.
 - Testes na mesma alteração que o código.
 - Preferir funções puras e ficheiros de dados a abstrações. Este projeto vive de um
 dicionário bem curado, não de padrões de arquitetura.
