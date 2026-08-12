@@ -123,7 +123,25 @@
         </div>
       </section>
       <section id="faq"><!-- TODO: faq --></section>
-      <section id="waitlist"><!-- TODO: waitlist --></section>
+      <section id="waitlist" class="waitlist container">
+        <h2>Entra na waitlist</h2>
+        <p class="sub">Recebe novidades do lançamento do Subly.</p>
+        <form class="waitlist-form" id="waitlist-form" novalidate>
+          <label for="waitlist-email" class="waitlist-label">Email</label>
+          <div class="waitlist-controls">
+            <input
+              id="waitlist-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nome@exemplo.pt"
+              required
+            />
+            <button type="submit" class="btn-primary">Entrar na waitlist</button>
+          </div>
+          <p id="waitlist-feedback" class="waitlist-feedback" aria-live="polite"></p>
+        </form>
+      </section>
     </main>
     <footer class="container">
       <span>© 2026 Subly</span>

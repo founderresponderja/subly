@@ -292,6 +292,65 @@ h1 .cut::after {
   letter-spacing: 0.04em;
 }
 
+.waitlist {
+  padding: 64px 0;
+  border-top: var(--border-w) solid var(--subly-line);
+}
+
+.waitlist h2 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+}
+
+.waitlist p.sub {
+  color: var(--subly-text-muted);
+  margin: 0 0 24px;
+  font-size: 15px;
+}
+
+.waitlist-form {
+  max-width: 640px;
+}
+
+.waitlist-label {
+  display: block;
+  font-size: 13px;
+  color: var(--subly-text-muted);
+  margin-bottom: 8px;
+}
+
+.waitlist-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.waitlist-controls input {
+  flex: 1;
+  min-width: 240px;
+  padding: 16px;
+  border: var(--border-w) solid var(--subly-line);
+  background: var(--subly-surface);
+  color: var(--subly-text);
+  font-size: 16px;
+  font-family: var(--font-display);
+}
+
+.waitlist-controls input::placeholder {
+  color: var(--subly-text-muted);
+}
+
+.waitlist-controls .btn-primary {
+  box-shadow: none;
+}
+
+.waitlist-feedback {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: var(--subly-yellow);
+}
+
 footer {
   border-top: var(--border-w) solid var(--subly-line);
   padding: 32px 0;
@@ -335,6 +394,14 @@ footer {
 
   .guide-cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .waitlist-controls {
+    flex-direction: column;
+  }
+
+  .waitlist-controls input {
+    min-width: 0;
   }
 
   footer {
