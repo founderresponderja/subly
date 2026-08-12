@@ -7,8 +7,69 @@
     <!-- LANDING SCAFFOLD: estrutura inicial sem conteúdo funcional -->
   </head>
   <body>
+    <header class="site-header">
+      <nav class="container">
+        <div class="logo" aria-label="Subly">
+          <span class="logo-mark" aria-hidden="true">●</span>
+          <span class="logo-word">Subly</span>
+        </div>
+        <div class="links">
+          <a href="#" class="active">Início</a>
+          <a href="#">Como funciona</a>
+          <a href="#">FAQ</a>
+          <button class="btn-login" type="button">Entrar</button>
+        </div>
+      </nav>
+    </header>
     <main>
-      <section id="hero"><!-- TODO: hero --></section>
+      <section id="hero" class="hero container">
+        <span class="badge">Sem Open Banking · 100% local</span>
+        <h1>
+          Descobre subscrições escondidas e vê
+          <span class="cut">como cancelar</span> em Portugal
+        </h1>
+        <p class="lede">
+          Carrega o teu extrato, identifica despesas recorrentes e recebe passos de
+          cancelamento com foco em comerciantes portugueses.
+        </p>
+        <div class="hero-ctas">
+          <!-- TODO: ligar a apps/web quando existir -->
+          <button type="button" class="btn-primary">Analisar o meu extrato</button>
+          <!-- TODO: ligar a apps/web quando existir -->
+          <button type="button" class="btn-secondary">Ver como funciona</button>
+        </div>
+
+        <div class="ledger" aria-label="Detetado no teu extrato">
+          <div class="ledger-head">
+            <span>Detetado no teu extrato</span>
+            <span>Recorrência mensal</span>
+          </div>
+          <div class="ledger-row">
+            <div>
+              <div class="ledger-merchant">NOS</div>
+              <div class="ledger-meta">Débito direto · Último movimento há 3 dias</div>
+            </div>
+            <div class="ledger-amount">€39,99</div>
+            <button type="button" class="ledger-cta">Ver cancelamento</button>
+          </div>
+          <div class="ledger-row">
+            <div>
+              <div class="ledger-merchant">Spotify</div>
+              <div class="ledger-meta">Cartão final 4942 · Cobrança no dia 11</div>
+            </div>
+            <div class="ledger-amount">€7,99</div>
+            <button type="button" class="ledger-cta">Ver cancelamento</button>
+          </div>
+          <div class="ledger-row">
+            <div>
+              <div class="ledger-merchant">MEO</div>
+              <div class="ledger-meta">Fatura serviço casa · Ativo há 14 meses</div>
+            </div>
+            <div class="ledger-amount">€54,49</div>
+            <button type="button" class="ledger-cta">Ver cancelamento</button>
+          </div>
+        </div>
+      </section>
       <section id="features"><!-- TODO: features --></section>
       <section id="how-it-works"><!-- TODO: how-it-works --></section>
       <section id="faq"><!-- TODO: faq --></section>

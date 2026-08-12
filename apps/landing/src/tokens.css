@@ -4,4 +4,9 @@
   --subly-surface: #141414;
   --subly-text: #f2f2f2;
   --subly-text-muted: #a1a1a1;
+  --subly-yellow: #ffe44f;
+  --subly-line: #33312b;
+  --font-display: 'Inter', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+  --border-w: 2px;
 }
