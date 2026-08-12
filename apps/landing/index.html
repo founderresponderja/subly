@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-PT">
   <head>
+    <!-- GUIDES TEASER: cartões estáticos, sem geração a partir de merchants.pt.json -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subly</title>
@@ -70,12 +71,64 @@
           </div>
         </div>
       </section>
-      <section id="features"><!-- TODO: features --></section>
-      <section id="how-it-works"><!-- TODO: how-it-works --></section>
+      <section id="features" class="features container">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">🔒</div>
+          <h3>Privacidade total no teu dispositivo</h3>
+          <p>
+            O extrato é processado localmente no browser, sem envio de transações
+            para servidores externos.
+          </p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">🔁</div>
+          <h3>Deteção de despesas recorrentes</h3>
+          <p>
+            Identificamos cobranças repetidas e agrupamos subscrições para teres
+            uma visão clara do que pagas todos os meses.
+          </p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">📌</div>
+          <h3>Guias de cancelamento em Portugal</h3>
+          <p>
+            Recebe passos práticos para cancelar serviços comuns no mercado
+            português, sem perder tempo a procurar informação dispersa.
+          </p>
+        </article>
+      </section>
+      <section id="how-it-works" class="guides container">
+        <h2>Guias de cancelamento mais procurados</h2>
+        <p class="sub">
+          Pré-visualização de guias com instruções claras para cancelar serviços
+          recorrentes em Portugal.
+        </p>
+        <div class="guide-cards">
+          <article class="guide-card">
+            <div class="name">NOS</div>
+            <div class="cat">Telecomunicações</div>
+          </article>
+          <article class="guide-card">
+            <div class="name">Netflix</div>
+            <div class="cat">Streaming</div>
+          </article>
+          <article class="guide-card">
+            <div class="name">Fitness Hut</div>
+            <div class="cat">Ginásio</div>
+          </article>
+          <article class="guide-card">
+            <div class="name">Fidelidade</div>
+            <div class="cat">Seguros</div>
+          </article>
+        </div>
+      </section>
       <section id="faq"><!-- TODO: faq --></section>
       <section id="waitlist"><!-- TODO: waitlist --></section>
     </main>
-    <footer><!-- TODO: footer --></footer>
+    <footer class="container">
+      <span>© 2026 Subly</span>
+      <span>Feito para quem quer cancelar melhor, não pagar mais.</span>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

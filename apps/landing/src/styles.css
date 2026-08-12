@@ -211,6 +211,97 @@ h1 .cut::after {
   text-transform: uppercase;
 }
 
+.features {
+  padding: 88px 0;
+  border-top: var(--border-w) solid var(--subly-line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.feature {
+  padding: 32px;
+  border-right: 1px solid var(--subly-line);
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+}
+
+.feature p {
+  font-size: 14px;
+  color: var(--subly-text-muted);
+  margin: 0;
+}
+
+.guides {
+  padding: 64px 0;
+  border-top: var(--border-w) solid var(--subly-line);
+}
+
+.guides h2 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+}
+
+.guides p.sub {
+  color: var(--subly-text-muted);
+  margin: 0 0 32px;
+  font-size: 15px;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.guide-card {
+  border: var(--border-w) solid var(--subly-line);
+  padding: 20px;
+  background: var(--subly-surface);
+}
+
+.guide-card .name {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.guide-card .cat {
+  font-size: 12px;
+  color: var(--subly-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+footer {
+  border-top: var(--border-w) solid var(--subly-line);
+  padding: 32px 0;
+  font-size: 13px;
+  color: var(--subly-text-muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 @media (max-width: 900px) {
   nav .links {
     gap: 14px;
@@ -227,5 +318,32 @@ h1 .cut::after {
 
   .ledger-row {
     flex-wrap: wrap;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    border-right: 0;
+    border-bottom: 1px solid var(--subly-line);
+  }
+
+  .feature:last-child {
+    border-bottom: none;
+  }
+
+  .guide-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .guide-cards {
+    grid-template-columns: 1fr;
   }
 }
