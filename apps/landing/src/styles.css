@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-display);
   background: var(--subly-black);
   color: var(--subly-text);
 }
