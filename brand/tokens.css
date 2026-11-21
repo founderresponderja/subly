@@ -1,0 +1,41 @@
+/* Subly by amplia: cores da marca (proposta B, Vinho e Rosa Pó). Valores RGB para usar com rgb(var(--c-x) / <alpha>). */
+:root {
+  --c-bg: 250 245 238;  /* #FAF5EE */
+  --c-surface: 255 255 255;  /* #FFFFFF */
+  --c-border: 234 223 211;  /* #EADFD3 */
+  --c-text: 43 27 34;  /* #2B1B22 */
+  --c-text-muted: 110 90 96;  /* #6E5A60 */
+  --c-primary: 122 31 61;  /* #7A1F3D */
+  --c-primary-hover: 100 24 47;  /* #64182F */
+  --c-on-primary: 255 255 255;  /* #FFFFFF */
+  --c-hero: 74 18 38;  /* #4A1226 */
+  --c-on-hero: 250 245 238;  /* #FAF5EE */
+  --c-accent: 233 185 179;  /* #E9B9B3 */
+  --c-notice: 249 230 227;  /* #F9E6E3 */
+  --c-on-notice: 100 24 47;  /* #64182F */
+  --c-danger: 180 35 24;  /* #B42318 */
+  --c-danger-soft: 254 243 242;  /* #FEF3F2 */
+  --c-success: 6 118 71;  /* #067647 */
+  --c-success-soft: 236 253 243;  /* #ECFDF3 */
+}
+.dark {
+  --c-bg: 28 17 22;  /* #1C1116 */
+  --c-surface: 54 41 46;  /* #36292E */
+  --c-border: 69 54 59;  /* #45363B */
+  --c-text: 250 245 238;  /* #FAF5EE */
+  --c-text-muted: 169 153 142;  /* #A9998E */
+  --c-primary: 233 185 179;  /* #E9B9B3 */
+  --c-primary-hover: 243 210 206;  /* #F3D2CE */
+  --c-on-primary: 28 17 22;  /* #1C1116 */
+  --c-hero: 58 14 30;  /* #3A0E1E */
+  --c-on-hero: 250 245 238;  /* #FAF5EE */
+  --c-accent: 233 185 179;  /* #E9B9B3 */
+  --c-notice: 58 14 30;  /* #3A0E1E */
+  --c-on-notice: 243 210 206;  /* #F3D2CE */
+  --c-danger: 249 112 102;  /* #F97066 */
+  --c-danger-soft: 85 22 12;  /* #55160C */
+  --c-success: 117 224 167;  /* #75E0A7 */
+  --c-success-soft: 5 51 33;  /* #053321 */
+}
+@font-face { font-family: 'Max'; src: url('./fonts/Max-Regular.woff') format('woff'); font-weight: 100 900; font-display: swap; }
+body { font-family: 'Max', 'Inter', system-ui, sans-serif; font-weight: 400; font-synthesis: none; }
